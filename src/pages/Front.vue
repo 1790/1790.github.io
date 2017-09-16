@@ -133,7 +133,7 @@
     name: 'Front',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: '首页'
       }
     }
   }
