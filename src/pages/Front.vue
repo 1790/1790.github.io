@@ -129,12 +129,12 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'Front',
-    data () {
-      return {
-        msg: '首页'
-      }
+export default {
+  name: 'Front',
+  data() {
+    return {
+      msg: '首页'
     }
   }
+}
 </script>
