@@ -43,12 +43,16 @@
         <div class="title">
           <h2>我们的技术栈</h2>
           <p>在保证服务质量的同时，探索新技术</p>
-          <div class="center-align">各种牛逼的技术  我编不下去了</div>
+          <div class="center-align">各种牛逼的技术 我编不下去了</div>
         </div>
         <div class="row">
           <div class="col s3">
             <span class="ran-sass"></span>
             <p>sass</p>
+          </div>
+          <div class="col s3">
+            <span class="ran-react"></span>
+            <p>react</p>
           </div>
           <div class="col s3">
             <span class="ran-vuejs"></span>
@@ -63,8 +67,12 @@
             <p>nodejs</p>
           </div>
           <div class="col s3">
-            <span class="ran-npm"></span>
-            <p>npm</p>
+            <span class="ran-drupal"></span>
+            <p>drupal</p>
+          </div>
+          <div class="col s3">
+            <span class="ran-wordpress"></span>
+            <p>wordpress</p>
           </div>
           <div class="col s3">
             <span class="ran-laravel"></span>
@@ -81,14 +89,6 @@
           <div class="col s3">
             <span class="ran-gulp"></span>
             <p>gulp</p>
-          </div>
-          <div class="col s3">
-            <span class="ran-react"></span>
-            <p>react</p>
-          </div>
-          <div class="col s3">
-            <span class="ran-wordpress"></span>
-            <p>wordpress</p>
           </div>
           <div class="col s3">
             <span class="ran-javascript"></span>
@@ -128,13 +128,12 @@
     </div>
   </div>
 </template>
-
 <script>
   export default {
     name: 'Front',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: '首页'
       }
     }
   }

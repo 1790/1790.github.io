@@ -1,8 +1,8 @@
 {
-  "name": "zkp-pbap-ui",
+  "name": "uranplus.com",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "wesley <wesley.wang@zhongkejf.com>",
+  "description": "武汉优燃佳科技有限公司官网",
+  "author": "uranplus.com",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
