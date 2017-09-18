@@ -36,7 +36,7 @@
     <div class="footer-info">
       <p class="center-align">Copyright © uranplus.com<span>|</span>
         <a href="/copyright">免责申明</a> <span>|</span>
-        <a href="/about">关于</a>
+        <a href="/about">关于我们</a>
         <span>|</span>鄂ICP备130666660号-1
         <span>|</span>QQ咨询:
         <a target="_bl/explorerank" href="" rel="nofollow">99989999</a></p>

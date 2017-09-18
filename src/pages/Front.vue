@@ -1,10 +1,23 @@
 <template>
   <div class="front">
     <div class="section-top">
-      <div class="container">
-        <div class="slogan center-align">
-          <div class="content">
-            <h1>一个很潮的团队，做着一些很潮的事情</h1>
+      <div class="section-bg" v-parallax>
+        <div class="bg-box" data-depth="0.2">
+          <div class="mask"></div>
+          <div class="bg-content"></div>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="container center-align">
+          <div class="slogan">
+            <div class="content">
+              <h1><span v-iType></span></h1>
+            </div>
+          </div>
+          <div class="contact-box">
+            <br>
+            <br>
+            <a class="btn btn-large red lighten-1">洽谈合作</a>
           </div>
         </div>
       </div>
@@ -129,12 +142,38 @@
   </div>
 </template>
 <script>
+  import Parallax from 'parallax-js';
+  import {init,destroy} from 'ityped';
+
   export default {
     name: 'Front',
-    data () {
+    data() {
       return {
         msg: '首页'
       }
+    },
+    directives: {
+      parallax:{
+        inserted(el){
+          var parallaxInstance = new Parallax(el, {
+            relativeInput: true
+          });
+          parallaxInstance.friction(0.2, 0.2);
+        }
+      },
+      iType:{
+        inserted(el){
+          init(el,{
+            strings: [
+              '一个很潮的团队，做着一些很潮的事情',
+              '一个想赚大钱的团队',
+              '一个词穷到只会说牛逼，来夸奖自己的团队',
+            ],
+            backDelay: 2000,
+            loop: true,
+          })
+        }
+      },
     }
   }
 </script>

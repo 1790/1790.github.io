@@ -3,6 +3,7 @@
 // import materialize
 @import "materialize";
 @import "icon";
+@import "plugin";
 
 // Custom style
 //@import "style";
@@ -12,11 +13,13 @@ body {
 }
 
 nav {
-  background: rgba(153, 153, 153, 0.50);
+  background: transparent;
   border-bottom: none;
   box-shadow: none;
-  .brand-logo {
-  }
+  position: absolute;
+  width:100%;
+  z-index: 999;
+  text-shadow: 3px 3px 15px #333;
 }
 
 .section-space {
@@ -25,11 +28,54 @@ nav {
 }
 
 .front {
+  position: relative;
   .section-top {
     height: 700px;
-    background: url("../assets/images/top-bg.jpg") top center no-repeat;
-    background-size: cover;
-    margin-top: -64px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .section-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    .bg-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .mask{
+      position: absolute;
+      width: 110%;
+      height: 100vh;
+      margin-left:-5%;
+      margin-top:-10vh;
+      background: rgba(168, 168, 168, 0.51);
+    }
+    .bg-content {
+      width: 110%;
+      height: 100vh;
+      margin-left:-5%;
+      margin-top:-10vh;
+      background: url("../assets/images/top-bg.jpg") top center no-repeat;
+      background-size: cover;
+    }
+  }
+  .section-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .contact-box{
+    .btn{
+      font-size: 20px;
+    }
   }
   .slogan {
     padding-top: 270px;
@@ -37,6 +83,7 @@ nav {
       font-size: 32px;
       margin: 0;
       color: #fff;
+      letter-spacing: 3px;
     }
     .content {
       background: rgba(0, 0, 0, 0.45);
@@ -71,10 +118,13 @@ nav {
     padding: 50px 0;
     .col {
       margin: 30px 0;
+      color: #999;
+      &:hover {
+        color: #666;
+      }
     }
     span {
       font-size: 32px;
-      color: #999;
     }
   }
 }
@@ -82,8 +132,8 @@ nav {
 .footer {
   background: #222;
   color: #fff;
-  .content{
-    padding-top:20px;
+  .content {
+    padding-top: 20px;
     min-height: 200px;
   }
   .header-lines-decoration {
@@ -101,32 +151,32 @@ nav {
   .header-lines-decoration span:first-child, .header-lines-decoration span:last-child {
     width: 15%;
   }
-  .logo{
+  .logo {
     font-size: 32px;
     color: #999;
     margin-top: 10px;
   }
-  ul{
-    line-height:32px;
+  ul {
+    line-height: 32px;
   }
-  a{
+  a {
     color: #fff;
     text-decoration: none;
   }
-  .qrcode{
-    img{
-      max-width:100px;
+  .qrcode {
+    img {
+      max-width: 100px;
     }
   }
-  .footer-info{
+  .footer-info {
     background: #1a1a1a;
     color: #dbdbdb;
     line-height: 45px;
-    p{
-      margin:0;
+    p {
+      margin: 0;
     }
-    span{
-      margin:0 5px;
+    span {
+      margin: 0 5px;
       display: inline-block;
     }
   }
